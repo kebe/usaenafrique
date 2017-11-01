@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client: one
+  container: one
+  pickup_contact_person: MyString
+  content_description: MyText
+
+two:
+  client: two
+  container: two
+  pickup_contact_person: MyString
+  content_description: MyText
