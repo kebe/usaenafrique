@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024025717) do
+ActiveRecord::Schema.define(version: 20171107050344) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20171024025717) do
     t.date "arrival_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "container_number"
   end
 
   create_table "shipments", force: :cascade do |t|
@@ -69,6 +70,7 @@ ActiveRecord::Schema.define(version: 20171024025717) do
     t.text "content_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pickup_contact_number"
     t.index ["client_id"], name: "index_shipments_on_client_id"
     t.index ["container_id"], name: "index_shipments_on_container_id"
   end
